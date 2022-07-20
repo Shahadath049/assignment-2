@@ -91,7 +91,7 @@ body{
         align-items: center;
         
     }
-    .match-sort .blog-button{
+    .match-sort #blog{
         background-color:aqua;
         color:rgb(19, 1, 1);
     }
@@ -159,6 +159,7 @@ body{
         
         background-color:#161616;
         padding:80px 0;
+        
           
     }
     footer h2{
@@ -242,5 +243,64 @@ body{
         }
         .services li{
             padding:20px 0;  
+        }
+    }
+    /* responsive for tablet device */
+    @media only screen and (min-width:688px) and (max-width:992px){
+        .banner{
+            justify-content: center;
+            width:100%;
+            
+        }
+        .banner-title{
+            font-size: 45px;
+        }
+        .banner-image{
+            padding-right:0;
+        }
+        .banner-image img{
+            height: 100%;
+            width:100%;
+        }
+        .match-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .match-sort{
+            flex-direction: row;
+            align-items: center;
+            width:auto;
+            height:auto;
+            background-color: #fff;
+           
+        }
+        .match-sort a{
+            box-shadow: 0.7px 2px 5px 0.2px grey;
+            
+        }
+        .match-sort .blog-button{
+            height:26px ;
+            width:155px;
+            padding-left: 10px;;
+        }
+        .match-details {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 50px;
+        }
+        .button{
+            display:contents;
+            
+        }
+        footer{
+           margin-top:20px;
+        }
+        .services{
+            
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .services li {
+            padding:10px 0;
         }
     }
