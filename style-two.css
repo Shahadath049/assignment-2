@@ -106,38 +106,24 @@ body{
     .match-content{
         border-radius:10px ;
         box-shadow: 0.7px 2px 5px 0.2px grey;
-    }
-
-    .match-content img{
-        height:175px;
-        width:100%;
-    }
-    .match-data{
-        padding:10px 10px;
-    }
-    .match-button{
-        text-decoration: none;
-        border:1px solid black;
-        border-radius:5px;
-        color: #034242fd;
-        padding:5px 10px;
-        font-weight: 700;
-        font-size: 13px;
         text-align: center;
     }
-    .match-heading{
-        font-weight: 700;
-        font-size: 18px;
+    .match-content h3 {
+        font-size:25px;
+        color:#161616;
     }
-    .match-duration{
-        width:40%;
-        display: flex;
-        justify-content:space-between;
-        color:#686767;
-        font-weight: 400;
-        font-size: 16px;
-
-      
+    .match-content p{
+        color:#4D4D4D;
+    }
+    .verses {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        padding:50px 25px 30px 25px;
+    }
+    .verses span{
+        padding-top:25px;
+        text-align: center;
+        
     }
     /* tablet button  */
     .button{
