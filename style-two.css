@@ -5,6 +5,9 @@ body{
     padding:0;
 
 }
+@keyframes new {
+    100% { transform: scale(2); }
+  }
 /* banner - area  */
     main{
         display:flex;
@@ -38,10 +41,38 @@ body{
     .banner-data{
         margin-bottom:45px;
     }
+/* loading animation */
+.loader{
+    position: relative;
+    top:620px;
+    display:flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    z-index: 1;
+}
+.loading{
+    background-color:aqua;
+    border-radius:50%;
+    border: 5px solid rgb(252, 249, 249);
+    margin:5px;
+
+}
+.loading:nth-child(1) {
+    animation: new .6s ease-in-out alternate infinite;
+  }
+  .loading:nth-child(2) {
+    animation: new .6s ease-in-out alternate .2s infinite;
+  }
+  
+  .loading:nth-child(3) {
+    animation: new .6s ease-in-out alternate .4s infinite;
+  }
+
     .banner-button{
         background-color: aqua;
         border-radius: 5px;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 20px;
         text-align: center;
         text-decoration:none;
@@ -63,11 +94,10 @@ body{
     }
     .match-container{
         display:flex;
-        
 
     }
     .match-sort{
-        position:relative;
+        
         height:312px;
         width:312px;
         background-color:#161616;
@@ -98,18 +128,19 @@ body{
     .match-details{
         display:grid;
         grid-template-columns:repeat(3,1fr);
-        grid-gap:20px;
+        grid-gap:10px;
+        
     } 
-    #box{
-        flex-grow: 1;
-    }
+    
     .match-content{
         border-radius:10px ;
         box-shadow: 0.7px 2px 5px 0.2px grey;
         text-align: center;
+        padding-bottom:40px;
     }
     .match-content h3 {
         font-size:25px;
+        margin:0;
         color:#161616;
     }
     .match-content p{
@@ -118,7 +149,7 @@ body{
     .verses {
         display:grid;
         grid-template-columns: repeat(3,1fr);
-        padding:50px 25px 30px 25px;
+        padding:50px 17px 30px 17px;
     }
     .verses span{
         padding-top:25px;
