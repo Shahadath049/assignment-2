@@ -5,6 +5,9 @@ body{
     padding:0;
 
 }
+@keyframes new {
+    100% { transform: scale(2); }
+  }
 /* banner - area  */
     main{
         display:flex;
