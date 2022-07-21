@@ -188,6 +188,11 @@ body{
         font-size: 13px;
         text-align: center;
     }
+    .match-button:hover{
+        background-color: #17f1ba;
+        border:1px solid #17f1ba;
+        color:rgb(255, 255, 255);
+    }
     .match-heading{
         font-weight: 700;
         font-size: 18px;
